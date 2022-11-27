@@ -3,6 +3,6 @@
     <string name="artist_name">Nirvana</string>
     <string name="song_name">Come As You Are</string>
     <string name="album_name">Smells Lİke Teens spirit</string>
-    <string name="now_playing">Now Playing</string>
-    <string name="move_on">More From The Artist</string>
+    <string name="now_playing">Şu An Çalıyor</string>
+    <string name="move_on">Sanatçı için Daha Fazlası</string>
 </resources>

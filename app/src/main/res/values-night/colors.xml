@@ -9,9 +9,8 @@
     <color name="white">#FFFFFFFF</color>
 
     <!--        Renkler               -->
-
-    <color name="backGround">#FFFF</color>
-    <color name="koyuAnaRenk">#402414</color>
-    <color name="yazıRenk1">#F28F16</color>
+    <color name="backGround">#424862</color>
+    <color name="koyuAnaRenk">#F2A413</color>
+    <color name="yazıRenk1">#1B8C8C</color>
 
 </resources>
