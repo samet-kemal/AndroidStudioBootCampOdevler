@@ -6,7 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
+import com.samet.androidstudiobootcampodevler.R;
 import com.samet.androidstudiobootcampodevler.databinding.FragmentSayfaABinding;
 
 
@@ -24,6 +26,9 @@ private FragmentSayfaABinding binding;
        binding.buttonGitB.setOnClickListener(view->{
 
           // AnasayfaFragmentDirections
+
+           Navigation.findNavController(view).navigate(R.id.action_sayfaAFragment_to_sayfaBFragment);
+
 
        });
 

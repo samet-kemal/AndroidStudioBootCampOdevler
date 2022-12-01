@@ -3,7 +3,6 @@ package com.samet.androidstudiobootcampodevler;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.samet.androidstudiobootcampodevler.databinding.ActivityMainBinding;
@@ -19,7 +18,8 @@ private ActivityMainBinding binding;
 
         NavHostFragment navHostFragment=
                 (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.AnasayfaFragmentContainerView);
-        NavController navController = navHostFragment.getNavController();
+        //NavController navController = navHostFragment.getNavController();
+       //NavigationUI.setupWithNavController(navController);
 
     }
 }

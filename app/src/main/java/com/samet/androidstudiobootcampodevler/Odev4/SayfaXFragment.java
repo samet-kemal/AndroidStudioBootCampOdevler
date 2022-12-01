@@ -6,7 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
+import com.samet.androidstudiobootcampodevler.R;
 import com.samet.androidstudiobootcampodevler.databinding.FragmentSayfaXBinding;
 
 public class SayfaXFragment extends Fragment {
@@ -20,6 +22,9 @@ private FragmentSayfaXBinding binding;
         binding = FragmentSayfaXBinding.inflate(inflater, container, false);
 
        binding.buttonGitYfromX.setOnClickListener(view->{
+
+           Navigation.findNavController(view).navigate(R.id.action_sayfaXFragment_to_sayfaYFragment);
+
 
        });
 

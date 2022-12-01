@@ -18,6 +18,13 @@ public class SayfaYFragment extends Fragment {
         // Inflate the layout for this fragment
 
         binding=FragmentSayfaYBinding.inflate(inflater, container, false);
+
+
         return binding.getRoot();
+
+
     }
+
+
+
 }
