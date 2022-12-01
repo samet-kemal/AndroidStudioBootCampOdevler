@@ -29,4 +29,6 @@ private FragmentSayfaBBinding binding;
 
         return binding.getRoot();
     }
+
+
 }

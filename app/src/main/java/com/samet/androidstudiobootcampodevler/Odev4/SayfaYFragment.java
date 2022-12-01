@@ -20,7 +20,10 @@ public class SayfaYFragment extends Fragment {
         binding=FragmentSayfaYBinding.inflate(inflater, container, false);
 
 
+
+
         return binding.getRoot();
+
 
 
     }

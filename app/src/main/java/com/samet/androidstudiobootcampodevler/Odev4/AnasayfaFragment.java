@@ -31,6 +31,15 @@ private FragmentAnasayfaBinding binding;
 
         });
 
+        binding.buttonGitX.setOnClickListener(view->{
+
+            //   AnasayfaFragmentDirections
+
+            Navigation.findNavController(view).navigate(R.id.action_anasayfaFragment_to_sayfaXFragment);
+
+
+        });
+
 
 
         return binding.getRoot();
