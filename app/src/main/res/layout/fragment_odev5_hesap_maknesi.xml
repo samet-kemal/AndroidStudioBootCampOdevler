@@ -7,22 +7,40 @@
     tools:context=".Odev5.Odev5HesapMaknesiFragment">
 
     <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="393dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="TOPLAM=0"
+        android:inputType="numberDecimal"
+        android:textAlignment="viewEnd"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
         android:id="@+id/editTextNumber"
         android:layout_width="393dp"
-        android:layout_height="81dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="numberDecimal"
         android:text="0"
         android:textAlignment="viewEnd"
-        android:textSize="40sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/button7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
 
     <Button
         android:id="@+id/button1"
@@ -139,17 +157,17 @@
         android:layout_marginStart="8dp"
         android:text="0"
         app:layout_constraintBottom_toTopOf="@+id/buttonTemizle"
-        app:layout_constraintEnd_toStartOf="@+id/buttonVirgul"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSil"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button1" />
 
     <Button
-        android:id="@+id/buttonVirgul"
-        android:layout_width="54dp"
+        android:id="@+id/buttonSil"
+        android:layout_width="93dp"
         android:layout_height="52dp"
-        android:text=","
+        android:text="Sil"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonTopla"
         app:layout_constraintEnd_toStartOf="@+id/buttonEsittir"
@@ -177,7 +195,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="16dp"
-        android:text="Temizle"
+        android:text="temizle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonTopla"
         app:layout_constraintHorizontal_bias="0.5"
@@ -188,13 +206,13 @@
 
     <Button
         android:id="@+id/buttonEsittir"
-        android:layout_width="100dp"
+        android:layout_width="63dp"
         android:layout_height="52dp"
         android:layout_marginEnd="8dp"
         android:text="="
         app:layout_constraintBottom_toTopOf="@+id/buttonTopla"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/buttonVirgul"
+        app:layout_constraintStart_toEndOf="@+id/buttonSil"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
