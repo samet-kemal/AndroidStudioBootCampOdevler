@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/odev_nav"
-    app:startDestination="@id/anasayfaFragment">
+    app:startDestination="@id/odev5HesapMaknesiFragment">
 
     <fragment
         android:id="@+id/anasayfaFragment"
@@ -59,4 +59,9 @@
             android:id="@+id/action_sayfaYFragment_to_anasayfaFragment"
             app:destination="@id/anasayfaFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/odev5HesapMaknesiFragment"
+        android:name="com.samet.androidstudiobootcampodevler.Odev5.Odev5HesapMaknesiFragment"
+        android:label="fragment_odev5_hesap_maknesi"
+        tools:layout="@layout/fragment_odev5_hesap_maknesi" />
 </navigation>
