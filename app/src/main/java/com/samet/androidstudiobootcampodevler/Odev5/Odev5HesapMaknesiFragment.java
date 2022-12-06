@@ -1,5 +1,4 @@
 package com.samet.androidstudiobootcampodevler.Odev5;
-
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -97,18 +96,21 @@ public class Odev5HesapMaknesiFragment extends Fragment {
         binding.buttonTopla.setOnClickListener(view->{
             int sayi=Integer.valueOf(binding.editTextNumber.getText().toString());
             toplam=toplam+sayi;
-            binding.editTextNumber.setText(""+toplam);
+            binding.editTextNumber2.setText(binding.editTextNumber2.getText().toString()+"+"+sayi);
+            binding.editTextNumber.setText("0");
 
         });
 
         binding.buttonTemizle.setOnClickListener(view->{
             toplam=0;
             binding.editTextNumber.setText("0");
+            binding.editTextNumber2.setText("0");
+
         });
 
         binding.buttonEsittir.setOnClickListener(view->{
 
-            binding.editTextNumber2.setText("Toplam="+toplam);
+            binding.editTextNumber2.setText(""+toplam);
         });
 
         binding.buttonSil.setOnClickListener(view->{
