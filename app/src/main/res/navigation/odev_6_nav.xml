@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/odev_6_nav"
+    app:startDestination="@id/aliExpressDemoFragment">
+
+    <fragment
+        android:id="@+id/aliExpressDemoFragment"
+        android:name="com.samet.androidstudiobootcampodevler.Odev6.AliExpressDemoFragment"
+        android:label="fragment_ali_express_demo"
+        tools:layout="@layout/fragment_ali_express_demo" >
+        <action
+            android:id="@+id/action_aliExpressDemoFragment_to_odev6TestFragment"
+            app:destination="@id/odev6TestFragment"
+            app:popUpTo="@id/aliExpressDemoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/odev6TestFragment"
+        android:name="com.samet.androidstudiobootcampodevler.Odev6.Odev6TestFragment"
+        android:label="fragment_odev6_test"
+        tools:layout="@layout/fragment_odev6_test" />
+</navigation>
