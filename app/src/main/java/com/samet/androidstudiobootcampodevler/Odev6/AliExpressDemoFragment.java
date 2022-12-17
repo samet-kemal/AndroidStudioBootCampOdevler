@@ -37,11 +37,11 @@ public class AliExpressDemoFragment extends Fragment {
 
         ArrayList<Urunler> urunlers = new ArrayList<>();
         Urunler u1= new Urunler(1,362.50,"Erkek Ayakkabı",32,"u2foto2");
-        Urunler u2= new Urunler(1,362.50,"Erkek Ayakkabı",32,"u2foto2");
-        Urunler u3= new Urunler(1,362.50,"Erkek Ayakkabı",32,"u2foto2");
-        Urunler u4= new Urunler(1,362.50,"Erkek Ayakkabı",32,"u2foto2");
-        Urunler u5= new Urunler(1,362.50,"Erkek Ayakkabı",32,"u2foto2");
-        Urunler u6= new Urunler(1,362.50,"Erkek Ayakkabı",32,"u2foto2");
+        Urunler u2= new Urunler(2,141.3,"Erkek Spor Ayakkabı",6,"u2foto");
+        Urunler u3= new Urunler(3,300.00,"Erkek Ayakkabı",32,"u2foto2");
+        Urunler u4= new Urunler(4,185.50,"Erkek Ayakkabı",32,"u3foto3");
+        Urunler u5= new Urunler(5,182.49,"Erkek Ayakkabı",32,"u4foto4");
+        Urunler u6= new Urunler(6,206.00,"Erkek Ayakkabı",32,"u2foto2");
 
 
         urunlers.add(u1);

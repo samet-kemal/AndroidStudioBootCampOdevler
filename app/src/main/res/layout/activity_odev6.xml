@@ -27,8 +27,8 @@
 
                 <com.google.android.material.tabs.TabLayout
                     android:id="@+id/tabLayoutToolBar"
-                    android:layout_width="187dp"
-                    android:layout_height="38dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="fill"
                     app:tabMode="fixed">
 
@@ -37,26 +37,29 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:weightSum="4">
+                android:layout_width="109dp"
+                android:layout_height="49dp"
+                android:layout_weight="1">
 
 
                 <ImageView
                     android:id="@+id/imageViewLocation"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.00002"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="5dp"
                     android:src="@drawable/location2"
+                    android:textAlignment="center"
                     app:srcCompat="@drawable/location2" />
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.00002"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="5dp"
                     android:src="@drawable/chat"
                     app:srcCompat="@drawable/chat" />
             </LinearLayout>
@@ -66,20 +69,29 @@
     </androidx.appcompat.widget.Toolbar>
 
 
-
-
-
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/odev6FragmentContainerView"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         app:defaultNavHost="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/odev6ToolBar"
-        app:layout_constraintVertical_bias="0.028"
         app:navGraph="@navigation/odev_6_nav" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_aliexpres_demo"
+        android:background="@color/design_default_color_on_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 </androidx.constraintlayout.widget.ConstraintLayout>

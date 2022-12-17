@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/action_aliExpres_DemoAnasayfa"
+    android:icon="@drawable/ali_expres_anasayfa"
+    android:title="Anasayfa"
+    />
+    <item
+        android:id="@+id/action_aliExpres_DemoKategori"
+        android:icon="@drawable/ali_expres_category"
+        android:title="Kategori"
+        />
+    <item
+        android:id="@+id/action_aliExpres_DemoAkil"
+        android:icon="@drawable/ali_expres_akil"
+        android:title="Akıl"
+        />
+    <item
+        android:id="@+id/action_aliExpres_DemoSepet"
+        android:icon="@drawable/ali_expres_sepet"
+        android:title="Sepet"
+        />
+    <item
+        android:id="@+id/action_aliExpres_DemoHesap"
+        android:icon="@drawable/ali_expres_hesap"
+        android:title="Hesap"
+        />
+
+
+
+</menu>
